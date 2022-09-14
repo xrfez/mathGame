@@ -90,6 +90,7 @@ proc main() =
       inputString = readLine(stdin)
       if inputString.exit: break
       resetVariables()
+    # TODO move these lines to start of loop to make restart update properly.
     eraseScreen()
     setCursorPos(0, 0)
 
