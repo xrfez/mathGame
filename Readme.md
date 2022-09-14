@@ -9,8 +9,11 @@ Two very simple TUI apps to practice addition and multiplication.  Answering all
 ## Controls
 
 `Enter` - Submit input
+
 `q` - Quit
+
 `r` - Restart
+
 `h` - Hint (Only available for wrong answers)
 
 Created to help my children memorize the tables.
