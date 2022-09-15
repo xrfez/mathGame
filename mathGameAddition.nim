@@ -58,6 +58,9 @@ proc main() =
 
   randomize()
   while true:
+    eraseScreen()
+    setCursorPos(0, 0)
+
     let idx = rand(0..remainingQuestions.len - 1)
     styledEcho styleBright, styleUnderscore, fgYellow,
         $remainingQuestions[idx].a & " + " & $remainingQuestions[idx].b
@@ -90,9 +93,6 @@ proc main() =
       inputString = readLine(stdin)
       if inputString.exit: break
       resetVariables()
-    # TODO move these lines to start of loop to make restart update properly.
-    eraseScreen()
-    setCursorPos(0, 0)
 
 main()
 
